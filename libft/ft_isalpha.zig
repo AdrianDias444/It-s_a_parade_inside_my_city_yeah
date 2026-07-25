@@ -1,14 +1,17 @@
-const header_file = @import("header.zig");
-const std = header_file.std;
+const lib = @import("lib.zig");
 
+// Used pub for this function could be used for any
+// file that import "lib.zig" module
+// with @import("lib.zig");
 
-fn ft_isalpha(c: i32) i32 {
-    if ((65 <= c and c <= 90) or (97 <= c and c <= 122))
+pub fn ft_isalpha(c: i32) i32
+{
+    if ((c >= 'A' and c <= 'Z') or (c >= 'a' and c <= 'z'))
         return (1);
     return (0);
 }
 
 pub fn main() void 
 {
-    std.debug.print("{d}\n", .{ft_isalpha(88)});
+    lib.print("{d}\n", .{ft_isalpha(88)});
 }
