@@ -20,8 +20,8 @@ pub fn ft_memset(s: [*]u8, c: i32, n: usize) [*]u8
 
 pub fn main() void
 {
-    // need to implement str_dup, for base this to
+    // need to implement str_dup, for test
     // memset, string are const, can't be modified
 
-    lib.print("{s}\n", .{ft_memset(str_ptr, 48, 3)});
+    //lib.print("{s}\n", .{ft_memset(str_ptr, 48, 3)});
 }

@@ -15,5 +15,5 @@ pub fn ft_isalnum(c: i32) i32
 
 pub fn main() void
 {
-    lib.print("{d}\n", .{ft_isalnum('+')});
+    lib.print("{d}\n", .{ft_isalnum('3')});
 }
